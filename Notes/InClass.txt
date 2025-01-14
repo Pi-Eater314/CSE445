@@ -1,0 +1,37 @@
+****computer architecture**** 
+flynn's classification
+computer archi -----> sisd (single instruction stream // single data stream) - simple comptuer 
+computer archi -----> simd (single instruction stream // multiple data stream) - vector/array computers
+computer archi -----> misd (multiple instruction stream // single data stream) - fault tolerant system, preforming redundant computing on the same data
+computer archi -----> mimd (multiple instruction stream // multiple data stream) - multi core processors (most computers today), distributed system networks 
+
+distributed systems (mimd) will the largest focus in this class 
+
+mimd ---> hardware archi
+mimd ---> distributed comptuer 
+mimd ---> distributed software archi 
+mimd ---> network archi (topology) 
+mimd ---> network comm (proticals) 
+
+50s - imperative (fortran) 
+60s - function (lisp) 
+70s - prodecural (C, pascal) logic (prlog) 
+80s - oop (c++, java, c#) 
+90s - multithreading (java C#)
+00s - distrubted object and service orientented 
+last three are distributed processing types of languages 
+
+***event driven architecture***
+the exectution flows are determined in parallel 
+event generating component checks the other componenets, it will notify all other involceed component, which call back or process 
+
+***distrubuted architecture***
+opens traffic, allows more instructions to be ran, or intrustions to be ran faster 
+most "computers" today (ie desktops) are several comptuers 
+they are more complex, can communicate and connect easier, are more secure and reliable, and can work on nondetermistic or unpredictable problems 
+
+***client server architecture***
+clients are connected to one server, servers are connected to other servers, which in turn are connected to other clients (can be used to balance loads or do cloud computing) 
+
+
+
