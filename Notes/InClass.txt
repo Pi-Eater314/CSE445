@@ -33,5 +33,120 @@ they are more complex, can communicate and connect easier, are more secure and r
 ***client server architecture***
 clients are connected to one server, servers are connected to other servers, which in turn are connected to other clients (can be used to balance loads or do cloud computing) 
 
+in dsitrbuted object architecture
+	- there is no distinction between clients and servers 
+	- each compoenet is an object that procides services to otehr objects, and vice versea 
+	- object communication is through a middleware called an object request broker (ORB, aka software bus) 
+	- more complex to design than client server systems 
+	- no explicit separation of duties 
+	- no set standard (multiple competing) 
+
+advantages
+	- it is open, allowes new resoruces to be added as need
+	- system is flexible and scalable 
+  	- can be recongigured with objects migrating across the network 
+  	- can delay decisions 
+
+uses 
+	- as a logical model that allows you to structure and organize a system 
+	- a more flexible appraoch to a client-server system 
+
+ORB 
+	- standard is CORBA ORB
+	- handles object communications 
+    	- service provider makes its services know with stubs 
+    	- the calling object binds an IDL stub that defines the called objet interface 
+    	- IDL is interface definition language 
+    	- calling this stub results in a call to the ORB which then calls the req object 
+
+CORBA 
+  	- defined by the object management group
+  	- international standard for ORB
+  	- enable software componenets written in multiple computer languages and running on multiple computers to interoperate 
+  	- several implementatiosn of CORBA exist 
+    	- DCOM was an alt by microsoft 
+  	- are comparable to objects in C++ and Java 
+  	- seperate interface defined by the IDL (similar to C++) 
+  	- mapping exists from IDL to programming languages, as such onjects in different langauges can communicate 
+
+MS DCOM (microsoft distrubuted component object model) 
+  	- orginally OLE (object linking and embedding), then network OLE 
+  	- extended to COM (compoennt object model) whihch gave the ablity for objects to communicate 
+  	- then com was significantly extended, renamed COM+, then DCOM 
+  	- DCOM allows not only objects to communicate, but allows networked computers to communicate
+  	- these are both intergrated into and replaced by visual studio .NET
+
+Enterprise Service Bus (ESB) 
+shift form disributed object to service 
+  	- ESB provides abstraction layer on top of implementation of enterprise messaging system 
+  	- it allows intergration architects to exploit the value of messaging w/o writing code 
+  	- service oriented version of ORB
+  	- opposed to EAI (tightly coupled), ESP is a loosely couple platform to support distributed funtions with independent deployment where needed, but still working in sync
+
+**Patterns**
+design patterns 
+- creational 
+- structural 
+- behavioral 
+- concurrency 
+
+creational 
+- abstract factory 
+	- interface fro creating families of objects without specificy class
+- factory 
+	- define interactce for creating an object, but let subclasses decided what class to instantiate 
+	- factory method lets a class dere instantiation to subclasses
+- lazy 
+	- tactic of delaying creation of an object, value or other expensive process until first time needed 
+- object pool 	
+	- avoid aqusition by recycling objects 
+
+structural 
+- adapter 
+	- convert the interface of a class into antoehr itnerface that clients expect 
+- decorator 
+	- attach additional responsiblites to object dynamically 
+	- provide a felciable alt to sub classing for extended funcitons 
+- facade 
+	- provide unfied itnerface to a set of interfaces in a subsystem 
+	- defines higher level interface that makes subsystem easier to use 
+- 
+
+behavioral 
+- command 
+	- store request into an object, letting give clients different requests 
+- iterator 
+	- proide a way to access the elements of an aggregate object in seq without exposing underlying representation 
+- mediator 
+	- define an object that encapsulates how a set of objects interact 
+	- promotes loose coupling by not allowing objects to refer to each other explicit 
+- state 
+	- allows an object to alter its behavior when its interal state changes 
+- observer 
+	- define a one to many dependency between objects so that when one object changes stae all its dependents are notified and update 
+
+concurrency 
+- active object
+	- does not wait for input (passive) 
+- monitor 
+- read-write lock 
+- reactor 
+
+****service oriented architecture and concepts****
+three party model of SOSD (service oriented software development) 
+- service repo
+	- service broker
+	- devs who understand database 
+- service requesters 
+	- appilcation builders 
+	- software engineers who understand the application domain 
+	- end user connects here BUT isnt a part of the model 
+- service developers 
+	- service providers 
+	- traditional object oriented programmers 
+
+
+
+
 
 
