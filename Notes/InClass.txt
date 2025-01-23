@@ -145,6 +145,32 @@ three party model of SOSD (service oriented software development)
 	- service providers 
 	- traditional object oriented programmers 
 
+HTML vs XML 
+tags 
+html - formating data 
+xml - define tags and attributes for human and machien
+
+SOAP - simple object access protocol 
+SOAp is used for transporting messages between web and applications 
+documetn in SOAP is XML doc 
+
+Serivce Oriented 
+Web Service 
+- builidng blocks of SOC software 
+	- SOAP and WSDL services havea  standard itnerface 
+	- restful services use HTTP without soap/wsdl 
+- ws can be remotely invoked, soap and http are not remote prodecure call
+- platform independent 
+- all program can be wrapped
+- can be placed in internet searchable repo 
+- most services will soon be avaible (maybe not for free tho) 
+
+chose template 
+define class with members and methods (C# style) 
+choose methods to be remotable by adding [operation contract] 
+********finish 
+
+
 
 
 
